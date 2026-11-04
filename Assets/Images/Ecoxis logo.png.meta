@@ -1,0 +1,3278 @@
+fileFormatVersion: 2
+guid: e4e0e77b9d9b68d4286a1a86d9874329
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6961932259444842427
+    second: Ecoxis logo_0
+  - first:
+      213: -1927339325553543782
+    second: Ecoxis logo_1
+  - first:
+      213: -2422836362320266318
+    second: Ecoxis logo_2
+  - first:
+      213: -4380109529951254965
+    second: Ecoxis logo_3
+  - first:
+      213: -1799854178978614688
+    second: Ecoxis logo_4
+  - first:
+      213: -3418589493965627047
+    second: Ecoxis logo_5
+  - first:
+      213: 4878944331699591360
+    second: Ecoxis logo_6
+  - first:
+      213: -7441780404342906580
+    second: Ecoxis logo_7
+  - first:
+      213: -2227292775369237497
+    second: Ecoxis logo_8
+  - first:
+      213: -6323174354225341996
+    second: Ecoxis logo_9
+  - first:
+      213: 2686539948438446025
+    second: Ecoxis logo_10
+  - first:
+      213: -485051660706651484
+    second: Ecoxis logo_11
+  - first:
+      213: 163500365788218917
+    second: Ecoxis logo_12
+  - first:
+      213: -8715908237485220486
+    second: Ecoxis logo_13
+  - first:
+      213: 7495009662303968936
+    second: Ecoxis logo_14
+  - first:
+      213: 374713154380466109
+    second: Ecoxis logo_15
+  - first:
+      213: -5964377871297017021
+    second: Ecoxis logo_16
+  - first:
+      213: -6430967750542239637
+    second: Ecoxis logo_17
+  - first:
+      213: 823759455285400375
+    second: Ecoxis logo_18
+  - first:
+      213: -1636872218687007800
+    second: Ecoxis logo_19
+  - first:
+      213: -5128792486079088302
+    second: Ecoxis logo_20
+  - first:
+      213: -5875311287193965680
+    second: Ecoxis logo_21
+  - first:
+      213: 8742828239158498686
+    second: Ecoxis logo_22
+  - first:
+      213: 5450964157926111644
+    second: Ecoxis logo_23
+  - first:
+      213: 1971958587422387059
+    second: Ecoxis logo_24
+  - first:
+      213: 681959933286096821
+    second: Ecoxis logo_25
+  - first:
+      213: -6573930173975244766
+    second: Ecoxis logo_26
+  - first:
+      213: -8775494232473510704
+    second: Ecoxis logo_27
+  - first:
+      213: -260586518575621596
+    second: Ecoxis logo_28
+  - first:
+      213: 2104249080575423310
+    second: Ecoxis logo_29
+  - first:
+      213: 1417836740514214786
+    second: Ecoxis logo_30
+  - first:
+      213: -3590967901718122007
+    second: Ecoxis logo_31
+  - first:
+      213: -466894841463771464
+    second: Ecoxis logo_32
+  - first:
+      213: 9148185225600553342
+    second: Ecoxis logo_33
+  - first:
+      213: -1772169748755665015
+    second: Ecoxis logo_34
+  - first:
+      213: -4602568708483066638
+    second: Ecoxis logo_35
+  - first:
+      213: 4984465551809317594
+    second: Ecoxis logo_36
+  - first:
+      213: 4406902252721646166
+    second: Ecoxis logo_37
+  - first:
+      213: -8554555011682434789
+    second: Ecoxis logo_38
+  - first:
+      213: 4662404940928021506
+    second: Ecoxis logo_39
+  - first:
+      213: -3640839580278600676
+    second: Ecoxis logo_40
+  - first:
+      213: -7249189568979722712
+    second: Ecoxis logo_41
+  - first:
+      213: -665441892915174722
+    second: Ecoxis logo_42
+  - first:
+      213: -7420584525792381754
+    second: Ecoxis logo_43
+  - first:
+      213: -8067091851306450802
+    second: Ecoxis logo_44
+  - first:
+      213: 8086051094387379621
+    second: Ecoxis logo_45
+  - first:
+      213: 7317861059496483703
+    second: Ecoxis logo_46
+  - first:
+      213: -8988666669803763263
+    second: Ecoxis logo_47
+  - first:
+      213: 1267434422430490029
+    second: Ecoxis logo_48
+  - first:
+      213: 7060683065443069143
+    second: Ecoxis logo_49
+  - first:
+      213: -4085731759756176665
+    second: Ecoxis logo_50
+  - first:
+      213: 8178603028556296946
+    second: Ecoxis logo_51
+  - first:
+      213: 2413203926080614536
+    second: Ecoxis logo_52
+  - first:
+      213: -7492915038324383047
+    second: Ecoxis logo_53
+  - first:
+      213: -7893367794201197938
+    second: Ecoxis logo_54
+  - first:
+      213: -452023004470006100
+    second: Ecoxis logo_55
+  - first:
+      213: -1096059107946881546
+    second: Ecoxis logo_56
+  - first:
+      213: -1376806606589291538
+    second: Ecoxis logo_57
+  - first:
+      213: 1700373442917083608
+    second: Ecoxis logo_58
+  - first:
+      213: 6165171217395105708
+    second: Ecoxis logo_59
+  - first:
+      213: -28179244752944865
+    second: Ecoxis logo_60
+  - first:
+      213: -8808818540173671169
+    second: Ecoxis logo_61
+  - first:
+      213: 2672780750847387799
+    second: Ecoxis logo_62
+  - first:
+      213: -7028125820479485132
+    second: Ecoxis logo_63
+  - first:
+      213: 6852666685110586288
+    second: Ecoxis logo_64
+  - first:
+      213: 3670368147955426287
+    second: Ecoxis logo_65
+  - first:
+      213: 1224215166245880030
+    second: Ecoxis logo_66
+  - first:
+      213: 6143353273804486563
+    second: Ecoxis logo_67
+  - first:
+      213: 2933720695199856052
+    second: Ecoxis logo_68
+  - first:
+      213: -4875136801099975080
+    second: Ecoxis logo_69
+  - first:
+      213: 156392833796306584
+    second: Ecoxis logo_70
+  - first:
+      213: -4015583301010427107
+    second: Ecoxis logo_71
+  - first:
+      213: 4043547809571705106
+    second: Ecoxis logo_72
+  - first:
+      213: -1831754889263537476
+    second: Ecoxis logo_73
+  - first:
+      213: 3075781717909127766
+    second: Ecoxis logo_74
+  - first:
+      213: -731427219531607511
+    second: Ecoxis logo_75
+  - first:
+      213: -6556796326931059546
+    second: Ecoxis logo_76
+  - first:
+      213: -3455916635109033943
+    second: Ecoxis logo_77
+  - first:
+      213: 4471291121813415567
+    second: Ecoxis logo_78
+  - first:
+      213: 6739056092857387502
+    second: Ecoxis logo_79
+  - first:
+      213: -1575892481260634645
+    second: Ecoxis logo_80
+  - first:
+      213: 8835972124218653385
+    second: Ecoxis logo_81
+  - first:
+      213: -3516211344149335638
+    second: Ecoxis logo_82
+  - first:
+      213: 5900132152703599719
+    second: Ecoxis logo_83
+  - first:
+      213: 2731119425528912121
+    second: Ecoxis logo_84
+  - first:
+      213: -1286625563954018996
+    second: Ecoxis logo_85
+  - first:
+      213: 8635772119854952195
+    second: Ecoxis logo_86
+  - first:
+      213: 4847682051291828212
+    second: Ecoxis logo_87
+  - first:
+      213: -1631693767370396037
+    second: Ecoxis logo_88
+  - first:
+      213: 3852872838864312619
+    second: Ecoxis logo_89
+  - first:
+      213: 8068027770794347179
+    second: Ecoxis logo_90
+  - first:
+      213: 3334315845476209847
+    second: Ecoxis logo_91
+  - first:
+      213: 6244387348845363105
+    second: Ecoxis logo_92
+  - first:
+      213: -1273329772626424007
+    second: Ecoxis logo_93
+  - first:
+      213: 1782311437024160338
+    second: Ecoxis logo_94
+  - first:
+      213: 8841089396708846358
+    second: Ecoxis logo_95
+  - first:
+      213: -857302404013208205
+    second: Ecoxis logo_96
+  - first:
+      213: -6007845439490162722
+    second: Ecoxis logo_97
+  - first:
+      213: -5154169465059744937
+    second: Ecoxis logo_98
+  - first:
+      213: 2674714720141836438
+    second: Ecoxis logo_99
+  - first:
+      213: -1549974448612020767
+    second: Ecoxis logo_100
+  - first:
+      213: 4907018790702024063
+    second: Ecoxis logo_101
+  - first:
+      213: -3581436001660667745
+    second: Ecoxis logo_102
+  - first:
+      213: -1034115444475191062
+    second: Ecoxis logo_103
+  - first:
+      213: -3447817851235936871
+    second: Ecoxis logo_104
+  - first:
+      213: -667995099644696845
+    second: Ecoxis logo_105
+  - first:
+      213: 1207960021672473543
+    second: Ecoxis logo_106
+  - first:
+      213: 4370158190105460274
+    second: Ecoxis logo_107
+  - first:
+      213: 1685665997831566632
+    second: Ecoxis logo_108
+  - first:
+      213: 5761230947872757076
+    second: Ecoxis logo_109
+  - first:
+      213: 2201356850059041103
+    second: Ecoxis logo_110
+  - first:
+      213: 7750377260623210245
+    second: Ecoxis logo_111
+  - first:
+      213: 9214398612372248900
+    second: Ecoxis logo_112
+  - first:
+      213: 7671330624457302534
+    second: Ecoxis logo_113
+  - first:
+      213: 3390286464361630104
+    second: Ecoxis logo_114
+  - first:
+      213: 5201075564764604496
+    second: Ecoxis logo_115
+  - first:
+      213: 5638762351036193177
+    second: Ecoxis logo_116
+  - first:
+      213: 7895200583595888898
+    second: Ecoxis logo_117
+  - first:
+      213: -718439332152199407
+    second: Ecoxis logo_118
+  - first:
+      213: 3782422315953815105
+    second: Ecoxis logo_119
+  - first:
+      213: 1634480293781815887
+    second: Ecoxis logo_120
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ecoxis logo_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 805
+        width: 211
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5402575fe7f326f90800000000000000
+      internalID: -6961932259444842427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_1
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 807
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a957dba4817b045e0800000000000000
+      internalID: -1927339325553543782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_2
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 797
+        width: 128
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb300b4a2b506ed0800000000000000
+      internalID: -2422836362320266318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_3
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 872
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46c3fdd699b633c0800000000000000
+      internalID: -4380109529951254965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_4
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 840
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0623a760922a507e0800000000000000
+      internalID: -1799854178978614688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_5
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 813
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951eb4bb7fabe80d0800000000000000
+      internalID: -3418589493965627047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_6
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 841
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c81cd9150e75b340800000000000000
+      internalID: 4878944331699591360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 821
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21ada6862c79b890800000000000000
+      internalID: -7441780404342906580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_8
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 836
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c925185011711e0800000000000000
+      internalID: -2227292775369237497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_9
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 836
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9d98b2d629f38a0800000000000000
+      internalID: -6323174354225341996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_10
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 827
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfd19569d1884520800000000000000
+      internalID: 2686539948438446025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_11
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 796
+        width: 80
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2edd1a510c449f0800000000000000
+      internalID: -485051660706651484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_12
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 805
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526047767bed44200800000000000000
+      internalID: 163500365788218917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_13
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 844
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ddac903afda0780800000000000000
+      internalID: -8715908237485220486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_14
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 838
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae9fbdd39f930860800000000000000
+      internalID: 7495009662303968936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_15
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 838
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7838be0af333500800000000000000
+      internalID: 374713154380466109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_16
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 788
+        width: 130
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b042b3de54a3da0800000000000000
+      internalID: -5964377871297017021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_17
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 797
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68dfe257ec90c6a0800000000000000
+      internalID: -6430967750542239637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 811
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733d7a03cd49e6b00800000000000000
+      internalID: 823759455285400375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_19
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 829
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c3947eb369a849e0800000000000000
+      internalID: -1636872218687007800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_20
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 807
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259309c486ed2d8b0800000000000000
+      internalID: -5128792486079088302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_21
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 796
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09be5f55383b67ea0800000000000000
+      internalID: -5875311287193965680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_22
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 807
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75db4746f3c45970800000000000000
+      internalID: 8742828239158498686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_23
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 670
+        width: 160
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99729c6507b5ab40800000000000000
+      internalID: 5450964157926111644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_24
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 812
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ba71b23edcd5b10800000000000000
+      internalID: 1971958587422387059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_25
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 821
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf119632fec67900800000000000000
+      internalID: 681959933286096821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_26
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 819
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220dbf14655b4c4a0800000000000000
+      internalID: -6573930173975244766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_27
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 829
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc5de87d7e273680800000000000000
+      internalID: -8775494232473510704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_28
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 821
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a5b0721f5326cf0800000000000000
+      internalID: -260586518575621596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_29
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 821
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43f3a6d36bc33d10800000000000000
+      internalID: 2104249080575423310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1755
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283f8d3e00b2da310800000000000000
+      internalID: 1417836740514214786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_31
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 809
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1f24a18b15a2ec0800000000000000
+      internalID: -3590967901718122007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_32
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 796
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bee61b8d914589f0800000000000000
+      internalID: -466894841463771464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_33
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 807
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71d5675ef1e4fe70800000000000000
+      internalID: 9148185225600553342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_34
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 807
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fa9bbb00df767e0800000000000000
+      internalID: -1772169748755665015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_35
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 793
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4d98425246020c0800000000000000
+      internalID: -4602568708483066638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_36
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 803
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada04c2b2016c2540800000000000000
+      internalID: 4984465551809317594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_37
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 807
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65aa7550046782d30800000000000000
+      internalID: 4406902252721646166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_38
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 809
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1181257a8d184980800000000000000
+      internalID: -8554555011682434789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_39
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 805
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2047a0f579034b040800000000000000
+      internalID: 4662404940928021506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_40
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 763
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ccf4511b3297dc0800000000000000
+      internalID: -3640839580278600676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_41
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 790
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e1f7fae74b56b90800000000000000
+      internalID: -7249189568979722712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_42
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 786
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2a022cf10e3c6f0800000000000000
+      internalID: -665441892915174722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_43
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 787
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4726290b9c40990800000000000000
+      internalID: -7420584525792381754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_44
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 790
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e804e68d3beeb0090800000000000000
+      internalID: -8067091851306450802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_45
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 795
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad4e9ce0ac673070800000000000000
+      internalID: 8086051094387379621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_46
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 771
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b93f6acd34e8560800000000000000
+      internalID: 7317861059496483703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_47
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 773
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c904fda947d14380800000000000000
+      internalID: -8988666669803763263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_48
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 775
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad521d54e4d69110800000000000000
+      internalID: 1267434422430490029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_49
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 662
+        width: 67
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dca953c6d59cf160800000000000000
+      internalID: 7060683065443069143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_50
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 660
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e293349c909c47c0800000000000000
+      internalID: -4085731759756176665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_51
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 217
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f238045f1c308170800000000000000
+      internalID: 8178603028556296946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_52
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 241
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880fc906f2c6d7120800000000000000
+      internalID: 2413203926080614536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_53
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 94
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b22e78c871d30890800000000000000
+      internalID: -7492915038324383047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_54
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 98
+        width: 88
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e820121efcf157290800000000000000
+      internalID: -7893367794201197938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 61
+        width: 102
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caea24ce8771ab9f0800000000000000
+      internalID: -452023004470006100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_56
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd9ef96c040ac0f0800000000000000
+      internalID: -1096059107946881546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_57
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 98
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee395d99fa994ece0800000000000000
+      internalID: -1376806606589291538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_58
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 86
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9a49a23a0f89710800000000000000
+      internalID: 1700373442917083608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_59
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 94
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf3c48ce861f8550800000000000000
+      internalID: 6165171217395105708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_60
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 96
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11467e4023eb9ff0800000000000000
+      internalID: -28179244752944865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_61
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 82
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4c216753ac0c580800000000000000
+      internalID: -8808818540173671169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_62
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 92
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798a2c09eef971520800000000000000
+      internalID: 2672780750847387799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_63
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 79
+        width: 74
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bc1998dc4177e90800000000000000
+      internalID: -7028125820479485132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_64
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 80
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb8b2a0b00991f50800000000000000
+      internalID: 6852666685110586288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_65
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 96
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3aac55264cfe230800000000000000
+      internalID: 3670368147955426287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_66
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed04bb025394df010800000000000000
+      internalID: 1224215166245880030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_67
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 100
+        width: 128
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a779dee043914550800000000000000
+      internalID: 6143353273804486563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_68
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 100
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b57993cd6ba6b820800000000000000
+      internalID: 2933720695199856052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_69
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 98
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8567003b8e8085cb0800000000000000
+      internalID: -4875136801099975080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_70
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 94
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89678d7247e9b2200800000000000000
+      internalID: 156392833796306584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_71
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 104
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1378416348c548c0800000000000000
+      internalID: -4015583301010427107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_72
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 17
+        width: 90
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21194d52f419d1830800000000000000
+      internalID: 4043547809571705106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_73
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 47
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2acdd12ac4496e0800000000000000
+      internalID: -1831754889263537476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_74
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 61
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6524d9e1d2f5faa20800000000000000
+      internalID: 3075781717909127766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_75
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 80
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92254c0b1d279d5f0800000000000000
+      internalID: -731427219531607511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_76
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 57
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac20b4ea749105a0800000000000000
+      internalID: -6556796326931059546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_77
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 65
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92876fe612e1a00d0800000000000000
+      internalID: -3455916635109033943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_78
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 86
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86eb0bd5973d0e30800000000000000
+      internalID: 4471291121813415567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_79
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 86
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee94238bfcfe58d50800000000000000
+      internalID: 6739056092857387502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_80
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 35
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed3042432e412ae0800000000000000
+      internalID: -1575892481260634645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_81
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 63
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca7e4df4ddaf9a70800000000000000
+      internalID: 8835972124218653385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_82
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 63
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1b7c48968e33fc0800000000000000
+      internalID: -3516211344149335638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_83
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 59
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76442c1ceea71e150800000000000000
+      internalID: 5900132152703599719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_84
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 67
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8d1ddb5a2e6e520800000000000000
+      internalID: 2731119425528912121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_85
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 55
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45859dcddcf42ee0800000000000000
+      internalID: -1286625563954018996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_86
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 61
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f2d2d1dfc68d770800000000000000
+      internalID: 8635772119854952195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_87
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff494b342d664340800000000000000
+      internalID: 4847682051291828212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_88
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 65
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e2ba5e92f0b59e0800000000000000
+      internalID: -1631693767370396037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_89
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 67
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29124dfe67287530800000000000000
+      internalID: 3852872838864312619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_90
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 61
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa0f24e28467ff60800000000000000
+      internalID: 8068027770794347179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_91
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 58
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4d092789ed54e20800000000000000
+      internalID: 3334315845476209847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_92
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1affed7a53588a650800000000000000
+      internalID: 6244387348845363105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_93
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f4ca47159345ee0800000000000000
+      internalID: -1273329772626424007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_94
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ae0f21fca0cb810800000000000000
+      internalID: 1782311437024160338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_95
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 47
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bad46d6fbd1ba70800000000000000
+      internalID: 8841089396708846358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_96
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 47
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d44b771004a14f0800000000000000
+      internalID: -857302404013208205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_97
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 45
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edffcb95768df9ca0800000000000000
+      internalID: -6007845439490162722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_98
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 47
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753e2f2fd26b878b0800000000000000
+      internalID: -5154169465059744937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_99
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 45
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6900091edde7e1520800000000000000
+      internalID: 2674714720141836438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_100
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 49
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed6c8b73726d7ae0800000000000000
+      internalID: -1549974448612020767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_101
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 23
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7506f5779b391440800000000000000
+      internalID: 4907018790702024063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_102
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 49
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9878378eee2c4ec0800000000000000
+      internalID: -3581436001660667745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_103
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 47
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0af437b7516a1f0800000000000000
+      internalID: -1034115444475191062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_104
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 42
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995d4de7ee3e620d0800000000000000
+      internalID: -3447817851235936871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_105
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 51
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6e9fdfefdcab6f0800000000000000
+      internalID: -667995099644696845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_106
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 27
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c339aa5d3983c010800000000000000
+      internalID: 1207960021672473543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_107
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 29
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23eff7548bbe5ac30800000000000000
+      internalID: 4370158190105460274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_108
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 50
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82574b24b40b46710800000000000000
+      internalID: 1685665997831566632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_109
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 51
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45551f4d50104ff40800000000000000
+      internalID: 5761230947872757076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_110
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 47
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4954af446acc8e10800000000000000
+      internalID: 2201356850059041103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_111
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 21
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50726b62e0fde8b60800000000000000
+      internalID: 7750377260623210245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_112
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 35
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449dc4dc7be10ef70800000000000000
+      internalID: 9214398612372248900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_113
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 23
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6026a59fe8a067a60800000000000000
+      internalID: 7671330624457302534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_114
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 35
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899071ba397bc0f20800000000000000
+      internalID: 3390286464361630104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_115
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 26
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05822cf6baeed2840800000000000000
+      internalID: 5201075564764604496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_116
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 33
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999db5a9b78e04e40800000000000000
+      internalID: 5638762351036193177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_117
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 20
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20190b7a913619d60800000000000000
+      internalID: 7895200583595888898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_118
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 15
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117366edb379706f0800000000000000
+      internalID: -718439332152199407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_119
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 15
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14effe46e0ddd7430800000000000000
+      internalID: 3782422315953815105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ecoxis logo_120
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 19
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42cd37da27dea610800000000000000
+      internalID: 1634480293781815887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ecoxis logo_0: -6961932259444842427
+      Ecoxis logo_1: -1927339325553543782
+      Ecoxis logo_10: 2686539948438446025
+      Ecoxis logo_100: -1549974448612020767
+      Ecoxis logo_101: 4907018790702024063
+      Ecoxis logo_102: -3581436001660667745
+      Ecoxis logo_103: -1034115444475191062
+      Ecoxis logo_104: -3447817851235936871
+      Ecoxis logo_105: -667995099644696845
+      Ecoxis logo_106: 1207960021672473543
+      Ecoxis logo_107: 4370158190105460274
+      Ecoxis logo_108: 1685665997831566632
+      Ecoxis logo_109: 5761230947872757076
+      Ecoxis logo_11: -485051660706651484
+      Ecoxis logo_110: 2201356850059041103
+      Ecoxis logo_111: 7750377260623210245
+      Ecoxis logo_112: 9214398612372248900
+      Ecoxis logo_113: 7671330624457302534
+      Ecoxis logo_114: 3390286464361630104
+      Ecoxis logo_115: 5201075564764604496
+      Ecoxis logo_116: 5638762351036193177
+      Ecoxis logo_117: 7895200583595888898
+      Ecoxis logo_118: -718439332152199407
+      Ecoxis logo_119: 3782422315953815105
+      Ecoxis logo_12: 163500365788218917
+      Ecoxis logo_120: 1634480293781815887
+      Ecoxis logo_13: -8715908237485220486
+      Ecoxis logo_14: 7495009662303968936
+      Ecoxis logo_15: 374713154380466109
+      Ecoxis logo_16: -5964377871297017021
+      Ecoxis logo_17: -6430967750542239637
+      Ecoxis logo_18: 823759455285400375
+      Ecoxis logo_19: -1636872218687007800
+      Ecoxis logo_2: -2422836362320266318
+      Ecoxis logo_20: -5128792486079088302
+      Ecoxis logo_21: -5875311287193965680
+      Ecoxis logo_22: 8742828239158498686
+      Ecoxis logo_23: 5450964157926111644
+      Ecoxis logo_24: 1971958587422387059
+      Ecoxis logo_25: 681959933286096821
+      Ecoxis logo_26: -6573930173975244766
+      Ecoxis logo_27: -8775494232473510704
+      Ecoxis logo_28: -260586518575621596
+      Ecoxis logo_29: 2104249080575423310
+      Ecoxis logo_3: -4380109529951254965
+      Ecoxis logo_30: 1417836740514214786
+      Ecoxis logo_31: -3590967901718122007
+      Ecoxis logo_32: -466894841463771464
+      Ecoxis logo_33: 9148185225600553342
+      Ecoxis logo_34: -1772169748755665015
+      Ecoxis logo_35: -4602568708483066638
+      Ecoxis logo_36: 4984465551809317594
+      Ecoxis logo_37: 4406902252721646166
+      Ecoxis logo_38: -8554555011682434789
+      Ecoxis logo_39: 4662404940928021506
+      Ecoxis logo_4: -1799854178978614688
+      Ecoxis logo_40: -3640839580278600676
+      Ecoxis logo_41: -7249189568979722712
+      Ecoxis logo_42: -665441892915174722
+      Ecoxis logo_43: -7420584525792381754
+      Ecoxis logo_44: -8067091851306450802
+      Ecoxis logo_45: 8086051094387379621
+      Ecoxis logo_46: 7317861059496483703
+      Ecoxis logo_47: -8988666669803763263
+      Ecoxis logo_48: 1267434422430490029
+      Ecoxis logo_49: 7060683065443069143
+      Ecoxis logo_5: -3418589493965627047
+      Ecoxis logo_50: -4085731759756176665
+      Ecoxis logo_51: 8178603028556296946
+      Ecoxis logo_52: 2413203926080614536
+      Ecoxis logo_53: -7492915038324383047
+      Ecoxis logo_54: -7893367794201197938
+      Ecoxis logo_55: -452023004470006100
+      Ecoxis logo_56: -1096059107946881546
+      Ecoxis logo_57: -1376806606589291538
+      Ecoxis logo_58: 1700373442917083608
+      Ecoxis logo_59: 6165171217395105708
+      Ecoxis logo_6: 4878944331699591360
+      Ecoxis logo_60: -28179244752944865
+      Ecoxis logo_61: -8808818540173671169
+      Ecoxis logo_62: 2672780750847387799
+      Ecoxis logo_63: -7028125820479485132
+      Ecoxis logo_64: 6852666685110586288
+      Ecoxis logo_65: 3670368147955426287
+      Ecoxis logo_66: 1224215166245880030
+      Ecoxis logo_67: 6143353273804486563
+      Ecoxis logo_68: 2933720695199856052
+      Ecoxis logo_69: -4875136801099975080
+      Ecoxis logo_7: -7441780404342906580
+      Ecoxis logo_70: 156392833796306584
+      Ecoxis logo_71: -4015583301010427107
+      Ecoxis logo_72: 4043547809571705106
+      Ecoxis logo_73: -1831754889263537476
+      Ecoxis logo_74: 3075781717909127766
+      Ecoxis logo_75: -731427219531607511
+      Ecoxis logo_76: -6556796326931059546
+      Ecoxis logo_77: -3455916635109033943
+      Ecoxis logo_78: 4471291121813415567
+      Ecoxis logo_79: 6739056092857387502
+      Ecoxis logo_8: -2227292775369237497
+      Ecoxis logo_80: -1575892481260634645
+      Ecoxis logo_81: 8835972124218653385
+      Ecoxis logo_82: -3516211344149335638
+      Ecoxis logo_83: 5900132152703599719
+      Ecoxis logo_84: 2731119425528912121
+      Ecoxis logo_85: -1286625563954018996
+      Ecoxis logo_86: 8635772119854952195
+      Ecoxis logo_87: 4847682051291828212
+      Ecoxis logo_88: -1631693767370396037
+      Ecoxis logo_89: 3852872838864312619
+      Ecoxis logo_9: -6323174354225341996
+      Ecoxis logo_90: 8068027770794347179
+      Ecoxis logo_91: 3334315845476209847
+      Ecoxis logo_92: 6244387348845363105
+      Ecoxis logo_93: -1273329772626424007
+      Ecoxis logo_94: 1782311437024160338
+      Ecoxis logo_95: 8841089396708846358
+      Ecoxis logo_96: -857302404013208205
+      Ecoxis logo_97: -6007845439490162722
+      Ecoxis logo_98: -5154169465059744937
+      Ecoxis logo_99: 2674714720141836438
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
