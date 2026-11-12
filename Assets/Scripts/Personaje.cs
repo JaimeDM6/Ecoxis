@@ -1,23 +1,18 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
-public class ScriptMovimiento : MonoBehaviour
+public class Personaje : MonoBehaviour
 {
     [Header("Movimiento")]
     public float velocidad = 5f;
     public float fuerzaSalto = 12f;
-
-    [Header("Detección de Suelo")]
-    public Transform controladorSuelo;
-    public float radioSuelo = 0.3f;
-    public LayerMask capaSuelo;
 
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sprite;
 
     private float inputHorizontal;
-    private bool ground;
+    private bool ground = false;
     private bool died = false;
     private bool hit = false;
 
@@ -51,7 +46,7 @@ public class ScriptMovimiento : MonoBehaviour
             Jump();
         }
 
-        ActualizarAnimaciones();
+        Animations();
     }
 
     void FixedUpdate()
@@ -62,28 +57,32 @@ public class ScriptMovimiento : MonoBehaviour
             return;
         }
 
-        ground = Physics2D.OverlapCircle(controladorSuelo.position, radioSuelo, capaSuelo);
-
         if (!hit)
         {
             rb.linearVelocity = new Vector2(inputHorizontal * velocidad, rb.linearVelocity.y);
         }
     }
 
-    public void MoveLeft()
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        inputHorizontal = -1f;
+        foreach (ContactPoint2D contact in collision.contacts)
+        {
+            if (contact.normal.y > 0.5f)
+            {
+                ground = true;
+                return;
+            }
+        }
     }
 
-    public void MoveRight()
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        inputHorizontal = 1f;
+        ground = false;
     }
 
-    public void Stop()
-    {
-        inputHorizontal = 0f;
-    }
+    public void MoveLeft() { inputHorizontal = -1f; }
+    public void MoveRight() { inputHorizontal = 1f; }
+    public void Parar() { inputHorizontal = 0f; }
 
     public void Jump()
     {
@@ -91,10 +90,11 @@ public class ScriptMovimiento : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
             anim.SetTrigger("Jump");
+            ground = false;
         }
     }
 
-    private void ActualizarAnimaciones()
+    private void Animations()
     {
         anim.SetFloat("VelocidadX", Mathf.Abs(rb.linearVelocity.x));
         anim.SetBool("EnSuelo", ground);
@@ -113,12 +113,9 @@ public class ScriptMovimiento : MonoBehaviour
         Invoke(nameof(Recover), 0.5f);
     }
 
-    private void Recover()
-    {
-        hit = false;
-    }
+    private void Recover() { hit = false; }
 
-    public void Die()
+    public void Morir()
     {
         if (died) return;
 
@@ -126,14 +123,5 @@ public class ScriptMovimiento : MonoBehaviour
         anim.SetTrigger("Die");
         rb.linearVelocity = Vector2.zero;
         GetComponent<Collider2D>().enabled = false;
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (controladorSuelo != null)
-        {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(controladorSuelo.position, radioSuelo);
-        }
     }
 }
