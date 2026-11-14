@@ -601,6 +601,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: HeartFull
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 201
+        width: 84
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500eb98d35a5a5f418d198431d7c76e1
+      internalID: -1288020546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 201
+        width: 81
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6ab93581ed60f42b270c06f56cf3ac
+      internalID: 1121520451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -628,6 +672,8 @@ TextureImporter:
       Desierto: -295319597
       Desierto_Locked: -1234298985
       Fenn: -898641965
+      Heart: 1121520451
+      HeartFull: -1288020546
       Izquierda: 485390114
       Jugar: 846010472778899471
       Nox: 933044607

@@ -1,11 +1,22 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
+[RequireComponent(typeof(AudioSource))]
 public class Personaje : MonoBehaviour
 {
     [Header("Movimiento")]
     public float velocidad = 5f;
     public float fuerzaSalto = 12f;
+
+    [Header("Sonidos de Pasos")]
+    public AudioClip step1;
+    public AudioClip step2;
+    public float tiempoEntrePasos = 0.5f;
+
+    private AudioSource audioSource;
+    private float temporizadorPasos = 0f;
+    private bool tocaPaso1 = true;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -15,13 +26,18 @@ public class Personaje : MonoBehaviour
     private bool ground = false;
     private bool died = false;
     private bool hit = false;
+    private float gravedadOriginal;
+    private float tiempoSuelo = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
+
         rb.freezeRotation = true;
+        gravedadOriginal = rb.gravityScale;
     }
 
     void Update()
@@ -41,12 +57,16 @@ public class Personaje : MonoBehaviour
         if (inputHorizontal > 0) sprite.flipX = false;
         else if (inputHorizontal < 0) sprite.flipX = true;
 
+        tiempoSuelo -= Time.deltaTime;
+        ground = tiempoSuelo > 0f;
+
         if (Input.GetButtonDown("Jump"))
         {
             Jump();
         }
 
         Animations();
+        Steps();
     }
 
     void FixedUpdate()
@@ -69,20 +89,11 @@ public class Personaje : MonoBehaviour
         {
             if (contact.normal.y > 0.5f)
             {
-                ground = true;
+                tiempoSuelo = 0.15f;
                 return;
             }
         }
     }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        ground = false;
-    }
-
-    public void MoveLeft() { inputHorizontal = -1f; }
-    public void MoveRight() { inputHorizontal = 1f; }
-    public void Parar() { inputHorizontal = 0f; }
 
     public void Jump()
     {
@@ -90,7 +101,7 @@ public class Personaje : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
             anim.SetTrigger("Jump");
-            ground = false;
+            tiempoSuelo = 0f;
         }
     }
 
@@ -100,28 +111,79 @@ public class Personaje : MonoBehaviour
         anim.SetBool("EnSuelo", ground);
     }
 
+    private void Steps()
+    {
+        if (temporizadorPasos > 0f)
+        {
+            temporizadorPasos -= Time.deltaTime;
+        }
+
+        if (ground && Mathf.Abs(inputHorizontal) > 0.1f)
+        {
+            if (temporizadorPasos <= 0f)
+            {
+                if (tocaPaso1) audioSource.PlayOneShot(step1);
+                else audioSource.PlayOneShot(step2);
+
+                tocaPaso1 = !tocaPaso1;
+                temporizadorPasos = tiempoEntrePasos;
+            }
+        }
+        else
+        {
+            if (temporizadorPasos <= 0f)
+            {
+                tocaPaso1 = true;
+            }
+        }
+    }
+
     public void Hit()
     {
         if (died || hit) return;
 
         hit = true;
         anim.SetTrigger("Hit");
+        inputHorizontal = 0f;
+        rb.linearVelocity = Vector2.zero;
 
         float direccionEmpuje = sprite.flipX ? 1f : -1f;
-        rb.linearVelocity = new Vector2(direccionEmpuje * 5f, 5f);
+        rb.linearVelocity = new Vector2(direccionEmpuje * 4f, 6f);
 
         Invoke(nameof(Recover), 0.5f);
     }
 
     private void Recover() { hit = false; }
 
-    public void Morir()
+    public void Die()
     {
         if (died) return;
-
         died = true;
+
+        CancelInvoke(nameof(Recover));
+        anim.ResetTrigger("Hit");
+        anim.SetFloat("VelocidadX", 0f);
+        inputHorizontal = 0f;
+
         anim.SetTrigger("Die");
+        StartCoroutine(SecuenciaMuerte());
+    }
+
+    private IEnumerator SecuenciaMuerte()
+    {
         rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 0f;
+
+        yield return new WaitForSeconds(1f);
+
+        rb.gravityScale = gravedadOriginal;
         GetComponent<Collider2D>().enabled = false;
+
+        yield return new WaitForSeconds(0.5f);
+
+        if (GameManager.instancia != null)
+        {
+            GameManager.instancia.GameOver();
+        }
     }
 }

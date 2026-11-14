@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuNiveles : MonoBehaviour
 {
+    public static bool Niveles = false;
+
     [Header("Paneles")]
     public GameObject panelPrincipal;
     public GameObject panelNiveles;
@@ -19,10 +21,21 @@ public class MenuNiveles : MonoBehaviour
 
     void Start()
     {
-        panelPrincipal.SetActive(true);
-        panelNiveles.SetActive(false);
         panelTransicion.alpha = 0f;
         panelTransicion.blocksRaycasts = false;
+
+        if (Niveles)
+        {
+            panelPrincipal.SetActive(false);
+            panelNiveles.SetActive(true);
+
+            Niveles = false;
+        }
+        else
+        {
+            panelPrincipal.SetActive(true);
+            panelNiveles.SetActive(false);
+        }
 
         ConfigurarCandados();
     }
@@ -80,6 +93,21 @@ public class MenuNiveles : MonoBehaviour
 
     public void CargarEscenaNivel(int indiceEscena)
     {
+        StartCoroutine(TransicionCargarNivel(indiceEscena));
+    }
+
+    private IEnumerator TransicionCargarNivel(int indiceEscena)
+    {
+        panelTransicion.blocksRaycasts = true;
+
+        while (panelTransicion.alpha < 1f)
+        {
+            panelTransicion.alpha += Time.deltaTime * velocidadFundido;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
         SceneManager.LoadScene(indiceEscena);
     }
 }
