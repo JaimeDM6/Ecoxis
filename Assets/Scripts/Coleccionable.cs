@@ -5,6 +5,7 @@ public class Coleccionable : MonoBehaviour
     [Header("Efecto Flotante")]
     public float velocidadFlotar = 2f;
     public float amplitudFlotar = 0.15f;
+    public AudioClip sonido;
 
     private Vector3 posicionInicial;
 
@@ -23,7 +24,8 @@ public class Coleccionable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // GameManager.instancia.SumarCopo();
+            GameManager.instancia.SumarPuntos(10);
+            AudioSource.PlayClipAtPoint(sonido, transform.position);
             Destroy(gameObject);
         }
     }
