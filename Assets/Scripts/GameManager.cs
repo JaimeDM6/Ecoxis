@@ -36,12 +36,10 @@ public class GameManager : MonoBehaviour
 
     [Header("UI Resumen Fin de Nivel")]
     public RectTransform panelResumenVictoria;
-    [Tooltip("Referencia antigua. Se conserva para Polo Norte, Desierto y Selva anteriores.")]
     public RectTransform panelResumen;
     public TextMeshProUGUI textoTiempo;
     public TextMeshProUGUI textoPuntuacionResumen;
     public float velocidadDeslizamiento = 3f;
-    [Tooltip("Permite editar TextoTiempo y TextoPuntos usando {tiempo} y {puntos}.")]
     public bool usarTextosEditablesResumen = false;
     private string plantillaTiempo;
     private string plantillaPuntos;
@@ -51,7 +49,6 @@ public class GameManager : MonoBehaviour
 
     [Header("Desierto (opcionales en los otros niveles)")]
     public InicioDesierto inicioDesierto;
-    [Tooltip("Campo antiguo conservado. Los diálogos ahora siempre pausan el juego.")]
     public bool pausarAlCompletar = false;
 
     private float tiempoNivel = 0f;
@@ -69,7 +66,6 @@ public class GameManager : MonoBehaviour
     {
         instancia = this;
         Time.timeScale = 1f;
-        // Mantener ambos nombres serializados, sin romper referencias antiguas.
         if (panelResumenVictoria == null) panelResumenVictoria = panelResumen;
         panelResumen = panelResumenVictoria;
         if (imagenIris == null) return;
@@ -110,7 +106,6 @@ public class GameManager : MonoBehaviour
             plantillaTiempo = textoTiempo != null ? textoTiempo.text : "TIEMPO: {tiempo}";
             plantillaPuntos = textoPuntuacionResumen != null ? textoPuntuacionResumen.text : "PUNTOS: {puntos}";
         }
-        // Una escena antigua puede tener el panel solo en InicioDesierto.
         if (panelExplicacion == null && inicioDesierto != null && inicioDesierto.panelInstrucciones != null)
             panelExplicacion = inicioDesierto.panelInstrucciones.GetComponent<RectTransform>();
         OcultarPanel(panelExplicacion);
@@ -126,7 +121,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        // No cuenta la entrada, el tutorial ni los diálogos.
         if (NivelActivo) tiempoNivel += Time.deltaTime;
     }
 
@@ -255,7 +249,6 @@ public class GameManager : MonoBehaviour
     private void EmpezarNivel()
     {
         if (enTransicion || resumenMostrado || misionFallidaMostrada) return;
-        // Restaurar el componente antes de reanudar la física, nunca a mitad del tween.
         if (inicioDesierto != null) inicioDesierto.RestaurarControl();
         explicacionMostrada = false;
         cerrandoExplicacion = false;
@@ -270,7 +263,6 @@ public class GameManager : MonoBehaviour
         nivelActivo = false;
         Time.timeScale = 0f;
 
-        // numeroNivel es la tarjeta logica (Desierto = 3), no el indice de escena.
         int abiertos = PlayerPrefs.GetInt("NivelesAbiertos", 1);
         if (numeroNivel >= abiertos)
         {
@@ -287,7 +279,7 @@ public class GameManager : MonoBehaviour
         if (textoPuntuacionResumen != null)
             textoPuntuacionResumen.text = usarTextosEditablesResumen
                 ? (plantillaPuntos ?? textoPuntuacionResumen.text).Replace("{puntos}", puntuacion.ToString())
-                : "PUNTUACIÓN: " + puntuacion;
+                : "PUNTUACION: " + puntuacion;
 
         if (panelResumenVictoria != null) MostrarPopup(panelResumenVictoria);
         else Debug.LogWarning("Falta Panel Resumen Victoria en GameManager. Asignalo en el Inspector.");
@@ -311,7 +303,6 @@ public class GameManager : MonoBehaviour
     private void MostrarPopup(RectTransform panel)
     {
         if (rutinaPanel != null) StopCoroutine(rutinaPanel);
-        // Nunca quedan dos ventanas activas detrás del mismo overlay.
         if (panel != panelExplicacion) OcultarPanel(panelExplicacion);
         if (panel != panelResumenVictoria) OcultarPanel(panelResumenVictoria);
         if (panel != panelMisionFallida) OcultarPanel(panelMisionFallida);
