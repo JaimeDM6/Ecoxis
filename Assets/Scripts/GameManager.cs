@@ -22,15 +22,26 @@ public class GameManager : MonoBehaviour
     public Sprite corazonLleno;
     public Sprite corazonVacio;
 
-    [Header("Transición Game Over")]
+    [Header("Transición")]
     public Image imagenIris;
     public float tiempoCierre = 1.5f;
     public string escenaMenu = "00_UI";
 
+    [Header("Fondo Oscuro")]
+    public Image fondoOscurecido;
+    [Range(0f, 1f)] public float opacidadMaxima = 0.6f;
+
+    [Header("Explicación de Nivel")]
+    public RectTransform panelExplicacion;
+
     [Header("UI Resumen Fin de Nivel")]
-    public RectTransform panelResumen;
+    public RectTransform panelResumenVictoria;
     public TextMeshProUGUI textoTiempo;
     public TextMeshProUGUI textoPuntuacionResumen;
+
+    [Header("UI Misión Fallida")]
+    public RectTransform panelMisionFallida;
+
     public float velocidadDeslizamiento = 3f;
 
     private float tiempoNivel = 0f;
@@ -43,6 +54,18 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (fondoOscurecido != null)
+        {
+            fondoOscurecido.gameObject.SetActive(false);
+            Color c = fondoOscurecido.color;
+            c.a = 0f;
+            fondoOscurecido.color = c;
+        }
+
+        if (panelExplicacion != null) panelExplicacion.anchoredPosition = new Vector2(0, -1500f);
+        if (panelResumenVictoria != null) panelResumenVictoria.anchoredPosition = new Vector2(0, -1500f);
+        if (panelMisionFallida != null) panelMisionFallida.anchoredPosition = new Vector2(0, -1500f);
+
         StartCoroutine(GameStart());
     }
 
@@ -69,7 +92,7 @@ public class GameManager : MonoBehaviour
 
         if (vidas <= 0)
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Personaje>().Die();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Pipo>().Die();
         }
     }
 
@@ -90,38 +113,123 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        StartCoroutine(TransicionCierreEscena(escenaMenu, true));
+        nivelActivo = false;
+        Time.timeScale = 0f;
+
+        if (panelMisionFallida != null)
+        {
+            StartCoroutine(AnimarPopup(panelMisionFallida));
+        }
     }
 
     private IEnumerator GameStart()
     {
-        if (imagenIris == null) yield break;
-
-        imagenIris.gameObject.SetActive(true);
-        imagenIris.color = Color.white;
-
-        Material matIris = new Material(imagenIris.material);
-        imagenIris.material = matIris;
-
-        float radioInicial = 0f;
-        float radioFinal = 1.5f;
-        float tiempo = 0f;
-
-        while (tiempo < tiempoCierre)
+        if (imagenIris != null)
         {
-            tiempo += Time.deltaTime;
-            float radioActual = Mathf.Lerp(radioInicial, radioFinal, tiempo / tiempoCierre);
-            matIris.SetFloat("_Radius", radioActual);
+            imagenIris.gameObject.SetActive(true);
+            imagenIris.color = Color.white;
+
+            Material matIris = new Material(imagenIris.material);
+            imagenIris.material = matIris;
+
+            float radioInicial = 0f;
+            float radioFinal = 1.5f;
+            float tiempo = 0f;
+
+            while (tiempo < tiempoCierre)
+            {
+                tiempo += Time.unscaledDeltaTime;
+                float radioActual = Mathf.Lerp(radioInicial, radioFinal, tiempo / tiempoCierre);
+                matIris.SetFloat("_Radius", radioActual);
+                yield return null;
+            }
+
+            matIris.SetFloat("_Radius", radioFinal);
+            imagenIris.gameObject.SetActive(false);
+        }
+
+        if (panelExplicacion != null)
+        {
+            StartCoroutine(AnimarExplicacion());
+        }
+    }
+
+    private IEnumerator AnimarExplicacion()
+    {
+        Vector2 posicionOculta = new Vector2(0, -1500f);
+        Vector2 posicionCentro = Vector2.zero;
+        panelExplicacion.anchoredPosition = posicionOculta;
+
+        if (fondoOscurecido != null) fondoOscurecido.gameObject.SetActive(true);
+
+        float t = 0f;
+        while (t < 1f)
+        {
+            t += Time.unscaledDeltaTime * velocidadDeslizamiento;
+            float curvaSuave = t * t * (3f - 2f * t);
+
+            panelExplicacion.anchoredPosition = Vector2.Lerp(posicionOculta, posicionCentro, curvaSuave);
+
+            if (fondoOscurecido != null)
+            {
+                Color colorFondo = fondoOscurecido.color;
+                colorFondo.a = Mathf.Lerp(0f, opacidadMaxima, curvaSuave);
+                fondoOscurecido.color = colorFondo;
+            }
+
             yield return null;
         }
 
-        matIris.SetFloat("_Radius", radioFinal);
-        imagenIris.gameObject.SetActive(false);
+        panelExplicacion.anchoredPosition = posicionCentro;
+
+        if (fondoOscurecido != null)
+        {
+            Color colorFinal = fondoOscurecido.color;
+            colorFinal.a = opacidadMaxima;
+            fondoOscurecido.color = colorFinal;
+        }
+
+        Time.timeScale = 0f;
+    }
+
+    public void CerrarExplicacionYEmpezar()
+    {
+        StartCoroutine(RutinaEmpezar());
+    }
+
+    private IEnumerator RutinaEmpezar()
+    {
+        Vector2 posicionCentro = Vector2.zero;
+        Vector2 posicionOcultaAbajo = new Vector2(0, -1500f);
+
+        float t = 0f;
+        while (t < 1f)
+        {
+            t += Time.unscaledDeltaTime * velocidadDeslizamiento;
+            float curvaSuave = t * t * (3f - 2f * t);
+
+            if (panelExplicacion != null)
+            {
+                panelExplicacion.anchoredPosition = Vector2.Lerp(posicionCentro, posicionOcultaAbajo, curvaSuave);
+            }
+
+            if (fondoOscurecido != null)
+            {
+                Color c = fondoOscurecido.color;
+                c.a = Mathf.Lerp(opacidadMaxima, 0f, curvaSuave);
+                fondoOscurecido.color = c;
+            }
+            yield return null;
+        }
+
+        if (fondoOscurecido != null) fondoOscurecido.gameObject.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void MostrarResumen()
     {
         nivelActivo = false;
+        Time.timeScale = 0f;
 
         int nivelesDesbloqueados = PlayerPrefs.GetInt("NivelesAbiertos", 1);
 
@@ -134,30 +242,50 @@ public class GameManager : MonoBehaviour
         int minutos = Mathf.FloorToInt(tiempoNivel / 60);
         int segundos = Mathf.FloorToInt(tiempoNivel % 60);
         textoTiempo.text = string.Format("TIEMPO TRANSCURRIDO: {0:00}:{1:00}", minutos, segundos);
-
         textoPuntuacionResumen.text = "PUNTUACION: " + puntuacion.ToString();
 
-        StartCoroutine(AnimarPopup());
+        if (panelResumenVictoria != null)
+        {
+            StartCoroutine(AnimarPopup(panelResumenVictoria));
+        }
     }
 
-    private IEnumerator AnimarPopup()
+    private IEnumerator AnimarPopup(RectTransform panel)
     {
         Vector2 posicionOculta = new Vector2(0, -1500f);
         Vector2 posicionCentro = Vector2.zero;
-        panelResumen.anchoredPosition = posicionOculta;
+        panel.anchoredPosition = posicionOculta;
+
+        if (fondoOscurecido != null) fondoOscurecido.gameObject.SetActive(true);
 
         float t = 0f;
         while (t < 1f)
         {
-            t += Time.deltaTime * velocidadDeslizamiento;
+            t += Time.unscaledDeltaTime * velocidadDeslizamiento;
+
             float curvaSuave = t * t * (3f - 2f * t);
-            panelResumen.anchoredPosition = Vector2.Lerp(posicionOculta, posicionCentro, curvaSuave);
+
+            panel.anchoredPosition = Vector2.Lerp(posicionOculta, posicionCentro, curvaSuave);
+
+            if (fondoOscurecido != null)
+            {
+                Color colorFondo = fondoOscurecido.color;
+                colorFondo.a = Mathf.Lerp(0f, opacidadMaxima, curvaSuave);
+                fondoOscurecido.color = colorFondo;
+            }
+
             yield return null;
         }
 
-        panelResumen.anchoredPosition = posicionCentro;
-    }
+        panel.anchoredPosition = posicionCentro;
 
+        if (fondoOscurecido != null)
+        {
+            Color colorFinal = fondoOscurecido.color;
+            colorFinal.a = opacidadMaxima;
+            fondoOscurecido.color = colorFinal;
+        }
+    }
 
     public void ReiniciarNivel()
     {
@@ -184,14 +312,14 @@ public class GameManager : MonoBehaviour
 
             while (tiempo < tiempoCierre)
             {
-                tiempo += Time.deltaTime;
+                tiempo += Time.unscaledDeltaTime;
                 float radioActual = Mathf.Lerp(radioInicial, radioFinal, tiempo / tiempoCierre);
                 matIris.SetFloat("_Radius", radioActual);
                 yield return null;
             }
 
             matIris.SetFloat("_Radius", radioFinal);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSecondsRealtime(0.5f);
         }
 
         if (esMenu)
@@ -200,6 +328,7 @@ public class GameManager : MonoBehaviour
             volverNiveles = true;
         }
 
+        Time.timeScale = 1f;
         SceneManager.LoadScene(nombreEscena);
     }
 }

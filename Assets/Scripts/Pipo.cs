@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 [RequireComponent(typeof(AudioSource))]
-public class Personaje : MonoBehaviour
+public class Pipo : MonoBehaviour
 {
     [Header("Movimiento")]
     public float velocidad = 5f;
@@ -189,7 +189,7 @@ public class Personaje : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         float direccionEmpuje = sprite.flipX ? 1f : -1f;
-        rb.linearVelocity = new Vector2(direccionEmpuje * 4f, 6f);
+        rb.linearVelocity = new Vector2(direccionEmpuje * 2f, 3f);
 
         Invoke(nameof(Recover), 0.5f);
     }

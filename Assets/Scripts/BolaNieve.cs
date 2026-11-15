@@ -49,7 +49,7 @@ public class BolaNieve : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Personaje>().Hit();
+            collision.gameObject.GetComponent<Pipo>().Hit();
 
             if (GameManager.instancia != null)
                 GameManager.instancia.PerderVida();
