@@ -1,30 +1,23 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class Harm : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            HarmPlayer(collision.gameObject);
-        }
+        Golpear(collision.collider);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            HarmPlayer(collision.gameObject);
-        }
+        Golpear(collision);
     }
 
-    private void HarmPlayer(GameObject jugador)
+    private void Golpear(Collider2D otro)
     {
-        jugador.GetComponent<Personaje>().Hit();
-
-        if (GameManager.instancia != null)
-        {
-            GameManager.instancia.PerderVida();
-        }
+        Personaje jugador = otro.GetComponentInParent<Personaje>();
+        if (jugador == null || !jugador.CompareTag("Player")) return;
+        GameManager manager = GameManager.instancia;
+        if (manager != null && !manager.NivelActivo) return;
+        if (jugador.TryHit() && manager != null) manager.PerderVida();
     }
 }

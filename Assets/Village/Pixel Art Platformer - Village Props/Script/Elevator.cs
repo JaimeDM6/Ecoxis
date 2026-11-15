@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 using Cainos.Common;
+using Cainos.Common;
 
 namespace Cainos.PixelArtPlatformer_VillageProps
 {
@@ -25,8 +26,8 @@ namespace Cainos.PixelArtPlatformer_VillageProps
                 this.length = value;
 
                 platform.transform.localPosition = new Vector3(0.0f, -value, 0.0f);
-                chainL.size = new Vector2(0.09375f, value - 8 * 0.03125f);
-                chainR.size = new Vector2(0.09375f, value - 8 * 0.03125f);
+                chainL.size = new Vector2(0.09375f, value - 8 * 0.03125f );
+                chainR.size = new Vector2(0.09375f, value - 8 * 0.03125f );
             }
         }
         private float length;

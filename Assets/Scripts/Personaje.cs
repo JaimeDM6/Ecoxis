@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
+#if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+#endif
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 [RequireComponent(typeof(AudioSource))]
@@ -8,15 +10,15 @@ public class Personaje : MonoBehaviour
 {
     [Header("Movimiento")]
     public float velocidad = 5f;
-    public float fuerzaSalto = 12f;
+    public float fuerzaSalto = 7.5f;
 
     [Header("Sonidos de Pasos")]
     public AudioClip step1;
     public AudioClip step2;
     public AudioClip harm;
-    public float tiempoEntrePasos = 0.5f;
     [Range(0f, 1f)] public float volumenPasos = 0.5f;
     [Range(0f, 1f)] public float volumenDano = 0.5f;
+    public float tiempoEntrePasos = 0.5f;
 
     private AudioSource audioSource;
     private float temporizadorPasos = 0f;
@@ -27,16 +29,15 @@ public class Personaje : MonoBehaviour
     private SpriteRenderer sprite;
 
     private float inputHorizontal;
+    private bool izquierdaTactil;
+    private bool derechaTactil;
     private bool ground = false;
     private bool died = false;
     private bool hit = false;
     private float gravedadOriginal;
     private float tiempoSuelo = 0f;
 
-    private bool moviendoIzquierda = false;
-    private bool moviendoDerecha = false;
-
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -49,49 +50,67 @@ public class Personaje : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale <= 0f) return;
+        tiempoSuelo -= Time.deltaTime;
+        ground = tiempoSuelo > 0f;
         if (died || hit) return;
-
-        LeerControles();
+        inputHorizontal = LeerHorizontal();
 
         if (inputHorizontal > 0) sprite.flipX = false;
         else if (inputHorizontal < 0) sprite.flipX = true;
 
-        tiempoSuelo -= Time.deltaTime;
-        ground = tiempoSuelo > 0f;
+        if (SaltoTeclado())
+        {
+            Jump();
+        }
 
         Animations();
         Steps();
     }
 
-    private void LeerControles()
+    private float LeerHorizontal()
     {
-        inputHorizontal = 0f;
-
-        if (moviendoIzquierda)
-        {
-            inputHorizontal = -1f;
-        }
-        else if (moviendoDerecha)
-        {
-            inputHorizontal = 1f;
-        }
-        else if (Keyboard.current != null)
-        {
-            if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
-            {
-                inputHorizontal = 1f;
-            }
-            else if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
-            {
-                inputHorizontal = -1f;
-            }
-
-            if (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame)
-            {
-                Jump();
-            }
-        }
+        if (izquierdaTactil || derechaTactil)
+            return (derechaTactil ? 1f : 0f) - (izquierdaTactil ? 1f : 0f);
+#if ENABLE_INPUT_SYSTEM
+        Keyboard teclado = Keyboard.current;
+        if (teclado == null) return 0f;
+        float derecha = teclado.dKey.isPressed || teclado.rightArrowKey.isPressed ? 1f : 0f;
+        float izquierda = teclado.aKey.isPressed || teclado.leftArrowKey.isPressed ? 1f : 0f;
+        return derecha - izquierda;
+#elif ENABLE_LEGACY_INPUT_MANAGER
+        return Input.GetAxisRaw("Horizontal");
+#else
+        return 0f;
+#endif
     }
+
+    private bool SaltoTeclado()
+    {
+#if ENABLE_INPUT_SYSTEM
+        return Keyboard.current != null && (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame);
+#elif ENABLE_LEGACY_INPUT_MANAGER
+        return Input.GetButtonDown("Jump");
+#else
+        return false;
+#endif
+    }
+
+    public void PulsarIzquierda(bool pulsado) { izquierdaTactil = pulsado; }
+    public void PulsarDerecha(bool pulsado) { derechaTactil = pulsado; }
+    // Nombres que esperaban los controles del nivel original.
+    public void MoveLeft() { PulsarIzquierda(true); }
+    public void MoveRight() { PulsarDerecha(true); }
+    public void Parar()
+    {
+        izquierdaTactil = false;
+        derechaTactil = false;
+        inputHorizontal = 0f;
+    }
+
+    private void OnDisable() { Parar(); }
+    private void OnApplicationFocus(bool foco) { if (!foco) Parar(); }
+    private void OnApplicationPause(bool pausa) { if (pausa) Parar(); }
 
     void FixedUpdate()
     {
@@ -109,6 +128,7 @@ public class Personaje : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        if (rb == null || rb.linearVelocity.y > 0.1f) return;
         foreach (ContactPoint2D contact in collision.contacts)
         {
             if (contact.normal.y > 0.5f)
@@ -119,29 +139,14 @@ public class Personaje : MonoBehaviour
         }
     }
 
-    public void MoveLeft()
-    {
-        moviendoIzquierda = true;
-    }
-
-    public void MoveRight()
-    {
-        moviendoDerecha = true;
-    }
-
-    public void Parar()
-    {
-        moviendoIzquierda = false;
-        moviendoDerecha = false;
-    }
-
     public void Jump()
     {
-        if (ground && !died && !hit)
+        if (rb != null && isActiveAndEnabled && Time.timeScale > 0f && tiempoSuelo > 0f && !died && !hit)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
             anim.SetTrigger("Jump");
             tiempoSuelo = 0f;
+            ground = false;
         }
     }
 
@@ -162,8 +167,8 @@ public class Personaje : MonoBehaviour
         {
             if (temporizadorPasos <= 0f)
             {
-                if (tocaPaso1) audioSource.PlayOneShot(step1, volumenPasos);
-                else audioSource.PlayOneShot(step2, volumenPasos);
+                AudioClip paso = tocaPaso1 ? step1 : step2;
+                if (paso != null) audioSource.PlayOneShot(paso, volumenPasos);
 
                 tocaPaso1 = !tocaPaso1;
                 temporizadorPasos = tiempoEntrePasos;
@@ -178,13 +183,16 @@ public class Personaje : MonoBehaviour
         }
     }
 
-    public void Hit()
-    {
-        if (died || hit) return;
+    public void Hit() { TryHit(); }
 
+    public bool TryHit()
+    {
+        if (died || hit || !isActiveAndEnabled || Time.timeScale <= 0f || rb == null) return false;
         hit = true;
+        tiempoSuelo = 0f;
+        ground = false;
+        if (harm != null) audioSource.PlayOneShot(harm, volumenDano);
         anim.SetTrigger("Hit");
-        audioSource.PlayOneShot(harm, volumenDano);
         inputHorizontal = 0f;
         rb.linearVelocity = Vector2.zero;
 
@@ -192,6 +200,7 @@ public class Personaje : MonoBehaviour
         rb.linearVelocity = new Vector2(direccionEmpuje * 4f, 6f);
 
         Invoke(nameof(Recover), 0.5f);
+        return true;
     }
 
     private void Recover() { hit = false; }
