@@ -20,7 +20,7 @@ public class Harm : MonoBehaviour
 
     private void HarmPlayer(GameObject jugador)
     {
-        jugador.GetComponent<Pipo>().Hit();
+        jugador.GetComponent<Personaje>().Hit();
 
         if (GameManager.instancia != null)
         {

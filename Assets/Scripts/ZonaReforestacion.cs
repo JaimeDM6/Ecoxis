@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class ZonaReforestacion : MonoBehaviour
@@ -16,7 +17,7 @@ public class ZonaReforestacion : MonoBehaviour
 
     void Update()
     {
-        if (jugadorCerca && !recuperada && Input.GetKeyDown(KeyCode.E))
+        if (jugadorCerca && !recuperada && Keyboard.current.eKey.isPressed)
         {
             if (misiones == null)
             {

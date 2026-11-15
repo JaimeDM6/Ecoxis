@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 [RequireComponent(typeof(AudioSource))]
-public class Pipo : MonoBehaviour
+public class Personaje : MonoBehaviour
 {
     [Header("Movimiento")]
     public float velocidad = 5f;

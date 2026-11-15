@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
 
         if (vidas <= 0)
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Pipo>().Die();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Personaje>().Die();
         }
     }
 
