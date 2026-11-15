@@ -21,14 +21,13 @@ public class MenuNiveles : MonoBehaviour
 
     void Start()
     {
-        panelTransicion.alpha = 0f;
-        panelTransicion.blocksRaycasts = false;
+        panelTransicion.alpha = 1f;
+        panelTransicion.blocksRaycasts = true;
 
         if (Niveles)
         {
             panelPrincipal.SetActive(false);
             panelNiveles.SetActive(true);
-
             Niveles = false;
         }
         else
@@ -38,6 +37,19 @@ public class MenuNiveles : MonoBehaviour
         }
 
         ConfigurarCandados();
+        StartCoroutine(FundidoDeEntrada());
+    }
+
+    private IEnumerator FundidoDeEntrada()
+    {
+        while (panelTransicion.alpha > 0f)
+        {
+            panelTransicion.alpha -= Time.deltaTime * velocidadFundido;
+            yield return null;
+        }
+
+        panelTransicion.alpha = 0f;
+        panelTransicion.blocksRaycasts = false;
     }
 
     public void MostrarSeleccionNiveles()
@@ -107,7 +119,12 @@ public class MenuNiveles : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.2f);
-
         SceneManager.LoadScene(indiceEscena);
+    }
+
+    public void SalirJuego()
+    {
+        Debug.Log("Saliendo del juego...");
+        Application.Quit();
     }
 }

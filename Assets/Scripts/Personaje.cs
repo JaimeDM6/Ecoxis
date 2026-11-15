@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 [RequireComponent(typeof(AudioSource))]
@@ -12,7 +13,10 @@ public class Personaje : MonoBehaviour
     [Header("Sonidos de Pasos")]
     public AudioClip step1;
     public AudioClip step2;
+    public AudioClip harm;
     public float tiempoEntrePasos = 0.5f;
+    [Range(0f, 1f)] public float volumenPasos = 0.5f;
+    [Range(0f, 1f)] public float volumenDano = 0.5f;
 
     private AudioSource audioSource;
     private float temporizadorPasos = 0f;
@@ -29,6 +33,9 @@ public class Personaje : MonoBehaviour
     private float gravedadOriginal;
     private float tiempoSuelo = 0f;
 
+    private bool moviendoIzquierda = false;
+    private bool moviendoDerecha = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,15 +51,7 @@ public class Personaje : MonoBehaviour
     {
         if (died || hit) return;
 
-        if (Input.GetAxisRaw("Horizontal") != 0)
-        {
-            inputHorizontal = Input.GetAxisRaw("Horizontal");
-        }
-        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) ||
-                 Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            inputHorizontal = 0f;
-        }
+        LeerControles();
 
         if (inputHorizontal > 0) sprite.flipX = false;
         else if (inputHorizontal < 0) sprite.flipX = true;
@@ -60,13 +59,38 @@ public class Personaje : MonoBehaviour
         tiempoSuelo -= Time.deltaTime;
         ground = tiempoSuelo > 0f;
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            Jump();
-        }
-
         Animations();
         Steps();
+    }
+
+    private void LeerControles()
+    {
+        inputHorizontal = 0f;
+
+        if (moviendoIzquierda)
+        {
+            inputHorizontal = -1f;
+        }
+        else if (moviendoDerecha)
+        {
+            inputHorizontal = 1f;
+        }
+        else if (Keyboard.current != null)
+        {
+            if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+            {
+                inputHorizontal = 1f;
+            }
+            else if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+            {
+                inputHorizontal = -1f;
+            }
+
+            if (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame)
+            {
+                Jump();
+            }
+        }
     }
 
     void FixedUpdate()
@@ -93,6 +117,22 @@ public class Personaje : MonoBehaviour
                 return;
             }
         }
+    }
+
+    public void MoveLeft()
+    {
+        moviendoIzquierda = true;
+    }
+
+    public void MoveRight()
+    {
+        moviendoDerecha = true;
+    }
+
+    public void Parar()
+    {
+        moviendoIzquierda = false;
+        moviendoDerecha = false;
     }
 
     public void Jump()
@@ -122,8 +162,8 @@ public class Personaje : MonoBehaviour
         {
             if (temporizadorPasos <= 0f)
             {
-                if (tocaPaso1) audioSource.PlayOneShot(step1);
-                else audioSource.PlayOneShot(step2);
+                if (tocaPaso1) audioSource.PlayOneShot(step1, volumenPasos);
+                else audioSource.PlayOneShot(step2, volumenPasos);
 
                 tocaPaso1 = !tocaPaso1;
                 temporizadorPasos = tiempoEntrePasos;
@@ -144,6 +184,7 @@ public class Personaje : MonoBehaviour
 
         hit = true;
         anim.SetTrigger("Hit");
+        audioSource.PlayOneShot(harm, volumenDano);
         inputHorizontal = 0f;
         rb.linearVelocity = Vector2.zero;
 
