@@ -189,7 +189,7 @@ public class Personaje : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         float direccionEmpuje = sprite.flipX ? 1f : -1f;
-        rb.linearVelocity = new Vector2(direccionEmpuje * 2f, 3f);
+        rb.linearVelocity = new Vector2(direccionEmpuje * 4f, 6f);
 
         Invoke(nameof(Recover), 0.5f);
     }
