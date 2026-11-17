@@ -18,6 +18,6 @@ public class Harm : MonoBehaviour
         if (jugador == null || !jugador.CompareTag("Player")) return;
         GameManager manager = GameManager.instancia;
         if (manager != null && !manager.NivelActivo) return;
-        if (jugador.TryHit() && manager != null) manager.PerderVida();
+        if (jugador.Hit() && manager != null) manager.PerderVida();
     }
 }

@@ -54,7 +54,7 @@ public class DesertObjective : MonoBehaviour
         }
 
         GameManager manager = GameManager.instancia;
-        bool tieneResumen = manager != null && manager.panelResumen != null;
+        bool tieneResumen = manager != null && manager.panelResumenVictoria != null;
         if (!tieneResumen && panelVictoria == null)
         {
             Debug.LogError("Asigna el Panel Resumen o el Panel Victoria antes de completar el Desierto.");
@@ -85,7 +85,7 @@ public class DesertObjective : MonoBehaviour
     private void ActualizarTexto()
     {
         if (textoObjetivo != null)
-            textoObjetivo.text = "BROTES " + BrotesRecogidos + "/" + brotesNecesarios + "   ·   LLEGA A LA ESTACIÓN";
+            textoObjetivo.text = "BROTES " + BrotesRecogidos + "/" + brotesNecesarios + "   ·   LLEGA AL OASIS";
     }
 
     public void VolverAlMenu()

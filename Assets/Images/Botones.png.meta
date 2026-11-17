@@ -821,7 +821,7 @@ TextureImporter:
         width: 249
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -830,6 +830,28 @@ TextureImporter:
       bones: []
       spriteID: a75645992fc926d479c3f6393bf705e4
       internalID: -586922408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantar
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 9
+        width: 242
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bb977a81b5da3439b4e3d21bafaf85
+      internalID: -497924073
       vertices: []
       indices: 
       edges: []
@@ -872,6 +894,7 @@ TextureImporter:
       Nox: 933044607
       Opciones: -419162462
       Pipo: -70611236
+      Plantar: -497924073
       PoloNorte: 373760587
       PoloNorte_Locked: 1490061700
       Reddit: 274192734

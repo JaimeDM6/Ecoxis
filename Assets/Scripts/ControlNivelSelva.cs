@@ -8,7 +8,6 @@ public class ControlNivelSelva : MonoBehaviour
     public GameManager gameManager;
     public Personaje personaje;
     public MisionesSelva misiones;
-    public IntroduccionSelva introduccion;
 
     [Header("Caída fuera del nivel")]
     public float alturaMuerte = -9f;
@@ -21,7 +20,6 @@ public class ControlNivelSelva : MonoBehaviour
         || (personaje != null && personaje.transform.position.y < alturaMuerte);
     public bool Victoria => victoria;
     public bool PuedeReforestar => isActiveAndEnabled && !victoria && !JugadorMuerto
-        && (introduccion == null || !introduccion.Mostrando)
         && gameManager != null && gameManager.gameObject.scene == gameObject.scene
         && personaje != null && personaje.gameObject.scene == gameObject.scene
         && personaje.isActiveAndEnabled && cuerpo != null && cuerpo.simulated;
